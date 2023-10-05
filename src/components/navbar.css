@@ -1,0 +1,66 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  .links {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    
+  }
+
+  @font-face {
+    font-family: "Lemon";
+    src: url("../fonts/Lemon-Regular.ttf");
+}
+
+  .logo{
+    margin-left: 20px;
+    color: rgb(41,117,223);
+    display: flex;
+    align-items: center;
+    font-family: "Lemon";
+  }
+
+  #lo{
+    width: 50px;
+    margin: 10px;
+    background-color: white;
+    border-radius:50px;
+    padding: 2px;
+  }
+
+  button{
+    width: 150px;
+    height: 3em;
+  margin-left:20px ;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color:  rgb(41,117,223);
+    transform: scale(1.25);
+}
+
+#picon{
+  width: 45px;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 3.5px;
+}
+  
