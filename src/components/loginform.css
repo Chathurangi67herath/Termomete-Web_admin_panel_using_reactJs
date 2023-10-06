@@ -19,7 +19,7 @@
 .cover{
     background-color: white;
     width: 30em;
-    height: 35em;
+    height: 25em;
     position: relative;
     border-radius: 1em;
     box-shadow: 0 0.188em 1.550em rgb(156 156 156);
@@ -129,5 +129,3 @@ input:focus{
     transform: scale(1);
     transition: 1.5s;
 }
-
-

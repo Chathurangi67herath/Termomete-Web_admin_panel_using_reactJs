@@ -6,19 +6,14 @@ import Navbar from "./navbar";
 
 const LoginForm = () => {
     const [popupStyle, showPopup] = useState("hide");
-    const [action, setAction] = useState("Login");
-
-    const handleTabClick = (tabName) => {
-        setAction(tabName);
-    }
 
     return (
         <>
-            <Navbar onTabClick={handleTabClick} />
+            <Navbar/>
             <div className="page">
                 <form>
                     <div className="cover">
-                        <h1>{action}</h1>
+                        <h1>Login</h1>
 
                        
                         <div className="input"><img src={email_icon}></img>
@@ -27,19 +22,8 @@ const LoginForm = () => {
                         <div className="input"><img src={password_icon}></img>
                             <input type="password" placeholder="Password"></input></div>
 
-                            {action === "Sign Up" ?   <div className="input"><img src={password_icon}></img>
-                            <input type="password" placeholder="Confirm Password"></input></div> : <></>}
 
-                        {action === "Login" ? <div className="login-btn" onClick={() => { /* Handle Login Action */ }}>{action}</div> :
-                            <div className="login-btn" onClick={() => { /* Handle Sign Up Action */ }}>{action}</div>}
-                        
-                        <p className="text">or <span>{action}</span> using</p>
-                        <div className="alt-login">
-                            <div className="facebook"></div>
-                            <div className="google"></div>
-                        </div>
-                        {action === "Login" ? <p className="">Haven't you Account? <span className="text2" onClick={() => { handleTabClick("Sign Up") }}>Sign Up</span></p> :
-                            <p className="">Already Have An Account? <span className="text2" onClick={() => { handleTabClick("Login") }}>Login</span></p>}
+                       <div className="login-btn" onClick={() => { /* Handle Login Action */ }}>Login</div> 
                         
                         
                         <div className={popupStyle}>

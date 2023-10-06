@@ -13,19 +13,19 @@ const Home = () => {
         setRangeValues(values);
     }
 
-    const handleIncrement = () => {
+    // const handleIncrement = () => {
         
-        if (rangeValues[1] < 100) {
-            setRangeValues([rangeValues[0], rangeValues[1] + 1]);
-        }
-    }
+    //     if (rangeValues[1] < 100) {
+    //         setRangeValues([rangeValues[0], rangeValues[1] + 1]);
+    //     }
+    // }
 
-    const handleDecrement = () => {
+    // const handleDecrement = () => {
        
-        if (rangeValues[1] > rangeValues[0]) {
-            setRangeValues([rangeValues[0], rangeValues[1] - 1]);
-        }
-    }
+    //     if (rangeValues[1] > rangeValues[0]) {
+    //         setRangeValues([rangeValues[0], rangeValues[1] - 1]);
+    //     }
+    // }
     
     return (
         <>
@@ -51,7 +51,7 @@ const Home = () => {
                         <div className="finput">
                             <label>Temperature Range</label><br></br>
                             <div className="range-input">
-                                <button id='valuebtn' onClick={handleDecrement}>-</button>
+                                {/* <button id='valuebtn' onClick={handleDecrement}>-</button> */}
                                 <Slider
                                     className='subinput'
                                     min={0}
@@ -60,7 +60,7 @@ const Home = () => {
                                     value={rangeValues}
                                     onChange={handleRangeChange}
                                 />
-                                <button id='valuebtn' onClick={handleIncrement}>+</button>
+                                {/* <button id='valuebtn' onClick={handleIncrement}>+</button> */}
                             </div>
                             <div className="selected-values">
                                 <span>{rangeValues[0]} </span>  -  <span> {rangeValues[1]}</span>
