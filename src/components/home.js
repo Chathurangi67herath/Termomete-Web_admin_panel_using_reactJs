@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './home.css';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import Navbar from "./navbar";
 
 const Home = () => {
     const [popupStyle, showPopup] = useState("hide");
@@ -25,8 +26,10 @@ const Home = () => {
             setRangeValues([rangeValues[0], rangeValues[1] - 1]);
         }
     }
+    
     return (
         <>
+         <Navbar />
             <div className="page">
                 <form>
                     <div className="cover" id="homecover">
